@@ -11,7 +11,7 @@ body{
   align-items: center;
   justify-content: center;
 }
-form{
+.form-message{
   background-color: #242F9B;
   display: flex;
   flex-direction: column;
@@ -388,8 +388,12 @@ footer p:nth-child(2){
 
 .image-head{
 	border-radius: 20px;
-}
+	position: absolute;
+	height: 500px;
 
+	right: 2%;
+	top: 200px;
+}
 
 
 
@@ -407,7 +411,7 @@ footer p:nth-child(2){
 	.image-head{
 		border-radius: 20px;
 		position: absolute;
-		height: 250px;
+		height: 200px;
 
 		right: 2%;
 		top: 200px;

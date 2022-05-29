@@ -3,6 +3,7 @@
  <head>
    <meta charset="utf-8">
    <title>email</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- bootstrap -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
    <!-- fontawesome  -->
@@ -14,7 +15,7 @@
  </head>
  <body>
    <div class="container">
-     <form  onsubmit="sendEmail(); reset(); return false; " action="/" method="post" >
+     <form class="form-message" onsubmit="sendEmail(); reset(); return false; " action="/" method="post" >
        <h3 ">Enter Name</h3>
        <Input  type="text"id="name" placeholder="Your name"> </Input>
        <h3 ">Enter Email</h3>
@@ -39,7 +40,7 @@
    Subject : document.getElementById("subject").value,
    Body : document.getElementById("name").value+"\n"+document.getElementById("message").value
    }).then(
-   message => alert(message+"\nPlease check your email to verify")
+   message => alert(message+"\nYour message has been sent sucessfully\nyou will be receiving a reply shortly")
 
    );
 
