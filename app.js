@@ -19,7 +19,7 @@ app.post("/", function(req,res,){
   res.sendFile(__dirname+"/contact.html")
 });
 app.post("/file", function(req,res){
-  res.sendFile(__dirname+"/michael's Resume.pdf")
+  res.sendFile(__dirname+"/michael's Resume.docx")
 });
  app.listen(process.env.PORT||3000, function(){
    console.log("server running");
